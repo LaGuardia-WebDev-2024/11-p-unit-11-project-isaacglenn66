@@ -18,7 +18,7 @@ button {
   border: none;
   cursor: pointer;
 }
-// i wanna make the images fade in so i think i have to start them out as invisible or something
+
 
 .memory-image {
   display: none;
