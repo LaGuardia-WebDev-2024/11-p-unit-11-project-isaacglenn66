@@ -23,4 +23,5 @@ button {
 .memory-image {
   display: none;
   width: 300px;
+  border-radius: 10px;
 }

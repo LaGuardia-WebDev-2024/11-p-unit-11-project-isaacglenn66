@@ -21,20 +21,23 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Fiorello_H._Laguardia_High_School_of_Music_%26_Art_and_Performing_Arts_logo.svg" style="position:absolute; top: 10px; right: 10px; width:80px;">
+
     <button id="mem1-button"> Jazz Orchestra Concerts!</button>
     <button id="mem2-button">Concerto Concert!</button>
     <button id="mem3-button">Juilliard Senior Recital!</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <h1>My Favorite Music Moments of  <span>High School!</span></h1>
     <ol>
       <li>
-        <img class="memory-image" src="PEAK JAZZ.jpg" width="300">
+        <img id="img1" class="memory-image" src="PEAK JAZZ.jpg" width="300">
         
         <h3 id="mem1">Memory #1: Jazz Orchestra Concerts!</h3>
         <p>I loved perorming in every one of my jazz concerts the past two years. The highlight of last year was playing with the trombone section where we were all good friends outside of music. This year was a different vibe- we all still got along just in a different way. The biggest difference this year is that they sound amazing and it's a lot of a fun getting to play in a band of that calliber. </p>
       </li>
 
       <li>
-        <img class="memory-image" src="PEAK LAG ORCHESTRA.jpg" width="300">
+        <img id="img2" class="memory-image" src="PEAK LAG ORCHESTRA.png" width="300">
         
 
         <h3 id="mem2">Memory #2: Concerto Concert!</h3>
@@ -42,7 +45,7 @@ Select ONE Additional
       </li>
 
       <li>
-        <img class="memory-image" src="SENIOR RECITAL.png" width="300">
+        <img id="img3" class="memory-image" src="SENIOR RECITAL.png" width="300">
 
 
         <h3 id="mem3">Memory #3:Juilliard Senior Recital!</h3>
@@ -53,21 +56,31 @@ Select ONE Additional
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
 
+
+$(document) .ready(function () {
       // ======================== Button #1
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
+        $("#img1").fadeIn();
       });
 
       // ======================== Button #2
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
+        $("#img2").fadeIn();
       });
 
       // ======================== Button #3
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
-        $("#mem3").text("Thanks for reading! 🎉");
+        $("#img3").fadeIn();
+        
       });
+
+$("p").css("font-size", "16px");
+$(".memory-image").hide();
+
+    });
 
 
     </script>
